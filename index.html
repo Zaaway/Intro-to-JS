@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function greet(){
+        //     console.log("Hello World!");
+        // }
+        // function shoutTen(){
+        //     console.log("10!");
+        // }
+
+        function initialize(){
+            messageOutput = document.getElementById("output");
+            message = "";
+        //     num1=3;
+        //     num2=7;
+
+        //     outputDiv = document.getElementById("divout");
+
+        //     numberOutput = document.getElementById("numberout");
+        //     negativeButton = document.getElementById("negativebtn");
+        //     myNumber = 0;
+        //     negativesAllowed = false;
+        //     display();
+        }
+        function addCharacter(ch){
+            message += ch;
+            display();
+        }
+        function addA(){
+            message += "A";
+            display();
+        }
+        // function addOne(){
+        //     myNumber++;
+        //     display();
+        // }
+        // function subtractOne(){
+        //     myNumber--;
+        //     if (myNumber<0 && !negativesAllowed){
+        //         myNumber = 0;
+        //     }
+        //     display();
+        // }
+        function display(){
+            messageOutput.innerHTML = message;
+        //     numberOutput.innerHTML = myNumber;
+        //     if(!negativesAllowed){
+        //         negativeButton.innerHTML = "Negatives are OFF";
+        //     }
+        //     else{
+        //         negativeButton.innerHTML = "Negatives are ON";
+        //     }
+        }
+        // function toggleNegatives(){
+            // if(negativesALlowed == true){
+            //     negativesAllowed = false;
+            // }
+            // else{
+            //     negativesAllowed = true;
+            // }
+        //     negativesAllowed = !negativesAllowed;
+        //     display();
+        // }
+        // function clickResponse(){
+        //     outputDiv.innerHTML="Now you've clicked the button.";
+        // }
+        // function addNumbers(){
+        //     var result = num1+num2;
+        //     console.log(result);
+        // }
+        // function subtractNumbers(){
+        //     var result = num1-num2;
+        //     console.log(result);
+        // }
+        // function multiplyNumbers(){
+        //     var result = num1*num2;
+        //     console.log(result);
+        // }
+        // function divideNumbers(){
+        //     var result = num1/num2;
+        //     console.log(result);
+        // }
+    </script>
+</head>
+<body onload="initialize();">
+    <div id="output"></div>
+    <hr />
+    <button onclick ="addA();">A</button>
+    <!-- <p>Hello World</p>   <br />
+    <p>Goodbye World</p> -->
+    <!-- These are block elements -->
+    <!-- <div>This is in a div.</div>
+    <div>This is also in a div.</div> -->
+    <!-- These are inline elements -->
+    <!-- <span>This is in a span.</span>
+    <span>This is also in a span.</span>
+    <h1>I am an h1</h1> -->
+
+    <!-- <div>
+        This text is inside of a &lt;div&gt;<br />
+        This character &#161; has the value #161.
+    </div> -->
+
+    <!-- <button onclick="shoutTen();">Shout 10</button> -->
+    <!-- <button onclick="addNumbers();">Add the 2 numbers</button> -->
+    <!-- <h1 id="numberout"></h1>
+    <hr />
+    <button onclick="addOne();">Add</button>
+    <button onclick="subtractOne();">Subtract</button>
+    <button onclick="toggleNegatives();" id="negativebtn">Negatives are OFF</button> -->
+    <!-- <div id="divout">You have not clicked the button.</div>
+    <button onclick="clickResponse();">Click me!</button> -->
